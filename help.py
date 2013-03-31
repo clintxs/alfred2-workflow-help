@@ -31,6 +31,8 @@ hotmod = {		131072 : "shift",
 
 				262144 : "control",
 
+				262401 : "control",
+
 				393216 : "shift+control",
 
 				524288 : "option",
@@ -46,6 +48,8 @@ hotmod = {		131072 : "shift",
 				1179648 : "shift+command",
 
 				1310720 : "control+command",
+
+				1310985 : "control+command",
 
 				1441792 : "shift+control+command",
 
