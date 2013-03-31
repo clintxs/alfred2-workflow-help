@@ -186,7 +186,10 @@ for item in dirs:
 
 					if "hotmod" in item['config'] and item['config']['hotmod']:
 
-						hotkeys += "\r\n* " + hotmod[item['config']['hotmod']] + " " + item['config']['hotstring']
+						if item['config']['hotmod'] in hotmod:
+							hotkeys += "\r\n* " + hotmod[item['config']['hotmod']] + " " + item['config']['hotstring']
+						else:
+							hotkeys += "\r\n* <font color=\"red\">Error reading hotkey</font>: try re-entering the hotkey in Alfred's preferences"
 
 					else:
 
